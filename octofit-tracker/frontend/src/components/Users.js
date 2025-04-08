@@ -6,6 +6,7 @@ const Users = () => {
 
   useEffect(() => {
     fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/users')
+//    fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);

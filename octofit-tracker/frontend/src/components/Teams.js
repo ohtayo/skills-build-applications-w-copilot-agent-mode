@@ -6,6 +6,7 @@ const Teams = () => {
 
   useEffect(() => {
     fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/teams')
+//    fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/api/teams/')
       .then(response => response.json())
       .then(data => setTeams(data));
   }, []);

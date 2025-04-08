@@ -6,6 +6,7 @@ const Activities = () => {
 
   useEffect(() => {
     fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/activities')
+//    fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/api/activities/')
       .then(response => response.json())
       .then(data => setActivities(data));
   }, []);
