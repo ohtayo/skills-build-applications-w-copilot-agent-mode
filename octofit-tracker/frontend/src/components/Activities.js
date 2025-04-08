@@ -5,7 +5,7 @@ const Activities = () => {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/api/activities')
+    fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/activities')
       .then(response => response.json())
       .then(data => setActivities(data));
   }, []);

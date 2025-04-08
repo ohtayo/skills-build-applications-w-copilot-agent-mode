@@ -5,7 +5,7 @@ const Workouts = () => {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/api/workouts')
+    fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/workouts')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);

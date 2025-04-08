@@ -5,7 +5,7 @@ const Users = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/api/users')
+    fetch('https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/users')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);
