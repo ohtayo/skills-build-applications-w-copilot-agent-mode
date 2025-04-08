@@ -8,11 +8,11 @@ from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, Lea
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
-        'users': '/users/',
-        'teams': '/teams/',
-        'activities': '/activities/',
-        'leaderboard': '/leaderboard/',
-        'workouts': '/workouts/',
+        'users': 'https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/users/',
+        'teams': 'https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/teams/',
+        'activities': 'https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/activities/',
+        'leaderboard': 'https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/leaderboard/',
+        'workouts': 'https://ominous-space-funicular-jqgwr57pqqjhqjj7-8000.app.github.dev/workouts/',
     })
 
 class UserList(APIView):
