@@ -19,6 +19,7 @@ const Leaderboard = () => {
             <th>ID</th>
             <th>Name</th>
             <th>Score</th>
+            <th>User ID</th>
           </tr>
         </thead>
         <tbody>
@@ -27,6 +28,7 @@ const Leaderboard = () => {
               <td>{entry.id}</td>
               <td>{entry.name}</td>
               <td>{entry.score}</td>
+              <td>{entry.user_id}</td>
             </tr>
           ))}
         </tbody>

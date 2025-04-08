@@ -17,14 +17,20 @@ const Activities = () => {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Name</th>
+            <th>User ID</th>
+            <th>Type</th>
+            <th>Duration</th>
+            <th>Date</th>
           </tr>
         </thead>
         <tbody>
           {activities.map(activity => (
             <tr key={activity.id}>
               <td>{activity.id}</td>
-              <td>{activity.name}</td>
+              <td>{activity.user_id}</td>
+              <td>{activity.type}</td>
+              <td>{activity.duration}</td>
+              <td>{activity.date}</td>
             </tr>
           ))}
         </tbody>
